@@ -8,12 +8,10 @@ generate sharepositive=labels1/totalsamples
 drop date
 preserve
 keep city numberofdates obs totalsamples sharepositive 
-export excel using "`outpath'\summarystats", firstrow(variables) replace
+export excel using "`outpath'\table1", firstrow(variables) replace
 restore
 
-keep city sharepositive auc_full avprecision1to1_1 avprecision1to1_sp ///
-avprecision1to1_full avprecision_1 avprecision_sp avprecision_full
-order city sharepositive auc_full avprecision1to1_1 avprecision1to1_sp ///
-avprecision1to1_full avprecision_1 avprecision_sp avprecision_full
+keep city avprecision_1 avprecision_sp avprecision_full auc_full
+order city avprecision_1 avprecision_sp avprecision_full auc_full
 
-export excel using "`outpath'\table1", firstrow(variables) replace
+export excel using "`outpath'\table2", firstrow(variables) replace
