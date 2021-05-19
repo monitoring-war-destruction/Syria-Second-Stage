@@ -1,4 +1,4 @@
-## This is the README file for the second stage code of the article &quot;Monitoring War Destruction from Space Using Machine Learning&quot;
+## README: Second stage code of the article &quot;Monitoring War Destruction from Space Using Machine Learning&quot;
 
 In order to replicate the results first run the jupyter notebook &quot;single\_second\_stage\_replication&quot; in the replication folder &quot;Syria-Second-Stage&quot; which also contains some documentation of the code. The code produces Table 1 and Table 2 together with all other performance statistics like ROC curves and precision/recall curves. It also produces a file called &quot;performance\_stats&quot; which contains more statistics from the paper.
 
