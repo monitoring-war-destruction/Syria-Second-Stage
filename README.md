@@ -2,6 +2,8 @@
 
 In order to replicate the results first run the jupyter notebook [single_second_stage_replication.ipynb](single_second_stage_replication.ipynb). That file additionally contains some documentation of that specific piece of code. The file produces [Table 1](table1.xls) and [Table 2](table2.xls) together with all other performance statistics like ROC curves and precision/recall curves. It also produces a file called [performance_stats.csv](performance_stats.csv); which contains summary performance statistics used in the paper.
 
+The jupyter code was run on a PC. Sometimes handing paths from Python to STATA will therefore fail on other systems. If this happens we recommend modifying the STATA codes as well and add a definition of the path in those codes directly.
+
 Upon completion of [single_second_stage_replication.ipynb](single_second_stage_replication.ipynb), the generated prediction output can be combined with the event data to produce the event study regression output **Table S2 (SI)** and the coefficient plot **Figure 5**. These codes are provided in the Stata do-file [event_study.do](event_study.do);. The program was written in Stata 14.2 and requires installing the following additional packages:
 
 i) coefplot ([https://ideas.repec.org/c/boc/bocode/s457686.html](https://ideas.repec.org/c/boc/bocode/s457686.html)) developed by Jann (2014),
